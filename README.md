@@ -2,8 +2,6 @@
 
 Insert paragraph here.
 
-## Ipsum Below 
+## Website Contents
 
-A bunch of text here 
-
-more test here again
+1. index.html

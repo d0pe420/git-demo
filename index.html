@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Oceanic Motivation </title>
+	<script>
+		var quotes = [
+			"Believe you can and you're halfway there. -Theodore Roosevelt",
+			"The best way to predict your future is to create it. -Abraham Lincoln",
+			"Your time is limited, don't waste it living someone else's life. -Steve Jobs",
+			"Success is not final, failure is not fatal: It is the courage to continue that counts. -Winston Churchill",
+			"Strive not to be a success, but rather to be of value. -Albert Einstein"
+		];
+		
+		function changeQuote() {
+			var quoteElement = document.getElementById("quote");
+			var randomIndex = Math.floor(Math.random() * quotes.length);
+			quoteElement.innerHTML = quotes[randomIndex];
+		}
+	</script>
+	<style>
+		body {
+			background-image: url('ocean.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: white;
+			font-size: 2em;
+			text-align: center;
+			margin-top: 100px;
+		}
+		
+		#quote {
+			margin-top: 50px;
+			font-style: italic;
+			font-size: 1em;
+			text-shadow: 2px 2px black;
+		}
+	</style>
+</head>
+<body onload="changeQuote()">
+	<div id="quote"></div>
+</body>
+</html>
